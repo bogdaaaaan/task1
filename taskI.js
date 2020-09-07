@@ -19,3 +19,23 @@ function Division(x,y,z) {
 function toCapital(str) {
 	return str[0].toUpperCase()+str.slice(1);
 }
+
+//Проверки
+function first_check() {
+	var value = document.getElementById("first").value;
+	console.log(array_maker(value));
+	document.getElementById("text-div").innerHTML = array_maker(value);
+}
+
+function second_check() {
+	var value = document.getElementById("second").value;
+	var arr = value.split(" ");
+	console.log(Division(arr[0], arr[1], arr[2]));
+	document.getElementById("text-div").innerHTML = Division(arr[0], arr[1], arr[2]);
+}
+
+function third_check() {
+	var value = document.getElementById("third").value;
+	console.log(toCapital(value));
+	document.getElementById("text-div").innerHTML = toCapital(value);
+}
